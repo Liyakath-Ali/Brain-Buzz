@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain-Buzz</title>
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="quiz">
+            <h1>Welcome to Brain Buzz!</h1>
+            <p id="rule">Choose the correct answer from the options given below</p>
+            <div class="question" id="q1">
+                <h2>1.What is the capital city of India ?</h2>
+                <button class="option" onclick="checkanswer(this, false)">A. Mumbai</button><br>
+                <button class="option" onclick="checkanswer(this, false)">B. Hyderabad</button><Br>
+                <button class="option" onclick="checkanswer(this, true)">C. Delhi</button><br>
+                <button class="option" onclick="checkanswer(this, false)">D. Kolkata</button>
+            </div>
+            <div class="question" id="q2">
+                <h2> 2.Which planet is known as the 'Red Planet'?</h2>
+                <button class="option" id="optq2" onclick="checkanswer(this, false)">A. Venus</button><br>
+                <button class="option" id="optq2" onclick="checkanswer(this, true)">B. Mars</button><Br>
+                <button class="option" id="optq2" onclick="checkanswer(this, false)">C. Jupiter</button><br>
+                <button class="option" id="optq2" onclick="checkanswer(this, false)">D. Saturn</button>
+            </div>
+            <div class="question" id="q3">
+                <h2> 3.What is the largest animal on Earth?</h2>
+                <button class="option" onclick="checkanswer(this, false)">A. African Elephant</button><br>
+                <button class="option" onclick="checkanswer(this, false)">B. Great White Shark</button><Br>
+                <button class="option" onclick="checkanswer(this, false)">C. Giraffe</button><br>
+                <button class="option" onclick="checkanswer(this, true)">D. Blue Whale</button>
+            </div>
+            <div class="question" id="q4">
+                <h2> 4.What is the boiling point of water at sea level in Celsius?</h2>
+                <button class="option" onclick="checkanswer(this, true)">A. 100°C</button><br>
+                <button class="option" onclick="checkanswer(this, false)">B. 95°C</button><Br>
+                <button class="option" onclick="checkanswer(this, false)">C. 110°C</button><br>
+                <button class="option" onclick="checkanswer(this, false)">D. 90°C</button>
+            </div>
+            <div class="question" id="q5">
+                <h2> 5.What is the smallest unit of life?</h2>
+                <button class="option" onclick="checkanswer(this, false)">A. Atom</button><br>
+                <button class="option" onclick="checkanswer(this, false)">B. Molecule</button><Br>
+                <button class="option" onclick="checkanswer(this, true)">C. Cell</button><br>
+                <button class="option" onclick="checkanswer(this, false)">D. Organ</button>
+            </div><br>
+            <p id="result"></p>
+            <button id="sub" onclick="submit()">Submit</button>
+            <button id="reload" onclick="reload()">Try again</button>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2024. All rights reserved
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

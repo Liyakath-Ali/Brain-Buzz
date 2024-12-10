@@ -1,0 +1,151 @@
+main{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    width: 80vw;
+    background-color:wheat;
+    border-radius: 20px;
+}
+.quiz h2{
+    color:firebrick;
+    font-family: "Roboto", sans-serif;
+}
+.quiz button{
+    font-size: 24px;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+.quiz h1{
+    color: blue;
+    font-family: "Bowlby One", sans-serif;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+.question button{
+    display: flex;
+    margin-left: 20%;
+}
+
+#q1{
+    margin-left: 8%;
+}
+#q1 h2{
+    width: 50vw;
+}
+#q4{
+    margin-left: 18%;
+}
+#q1 h2{
+    margin-left: 10%
+}
+#q1 button{
+    margin-left: 25%;
+}
+#q2{
+    margin-left: 7%
+}
+#q3 button{
+    margin-left: 23%;
+}
+.option:hover{
+    background-color: gray;
+}
+#sub{
+    background-color: crimson;
+    color: white;
+    padding: 10px 7px 15px;
+    margin-bottom: 30px;
+}
+#sub:hover{
+    cursor: pointer;
+}
+#rule{
+    margin-top: 5px;
+    font-size: 34px;
+}
+#result{
+    font-size: 50px;
+    color: darkgreen;
+    font-family: "Roboto", sans-serif;
+}
+#abc{
+    padding: 10px;
+    color:darkblue;
+}
+#reload{
+    margin-bottom: 20px;
+    padding: 5px 5px 5px;
+    background-color: greenyellow;
+}
+footer{
+    margin-left: 20%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media(max-width:769px){
+    .quiz{
+        font-size: 15px;
+    }
+    .quiz button{
+        padding: 5px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .quiz h1{
+        font-size: 30px;
+    }
+    #rule{
+        font-size: 18px;
+        display: flex;
+        margin-left: 20px;
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .option{
+        margin-right: 10%;
+    }
+    #q1{
+        margin-right: 15%;
+    }
+    #optq2{
+        margin-right: 25%;
+    }
+    #q4{
+        margin-right: 20%;
+    }
+    footer{
+        margin-left: 20%;
+    }
+}
+@media(max-width:2160px){
+    .quiz{
+        font-size: 20px;
+    }
+    .quiz button{
+        font-size: 20px;
+    }
+    #q1{
+        margin-right: 10%;
+    }
+    #rule{
+        font-size: 24px;
+    }
+}
